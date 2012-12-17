@@ -1,3 +1,14 @@
 <% provide(:title, "Home Apples")%>
-<h1>This is the home of the TestApp!</h1> 
-<p>Edit me in app/views/static_pages/home.html.erb</p>
+<div class="center hero-unit">
+  <h1>Art</h1>
+
+  <h2>
+    This is where you go to 
+    <a href="http://railstutorial.org/">Rock!</a>
+    and Roll.
+  </h2>
+
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>
